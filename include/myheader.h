@@ -1,0 +1,17 @@
+#pragma Once
+
+#include <HardwareSerial.h>
+#include <DFRobotDFPlayerMini.h>
+#include <Arduino.h>
+
+inline constexpr int MP3_RX{20};
+inline constexpr int MP3_TX{21};
+inline constexpr int BUTTON_TOGGLE{4};
+inline constexpr int BUTTON_SKIP{5};
+
+inline HardwareSerial mySerial(1);
+inline DFRobotDFPlayerMini player;
+
+void playRandomTrack();
+void togglePlayPause(bool &isPlaying);
+void skipTrack(int &currentTrack);
