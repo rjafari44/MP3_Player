@@ -39,7 +39,7 @@ void setup() {
 
     // let monitor know initialization was successful
     Serial.println("DFPlayer initialized successfully!");
-    player.volume(30);
+    player.volume(20);
 }
 
 // main loop that performs all of the mp3 player actions, returns nothing
