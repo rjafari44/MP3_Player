@@ -15,7 +15,7 @@ inline HardwareSerial mySerial(1);
 inline DFRobotDFPlayerMini player;
 
 // Functions
-void playRandomTrack(int &currentTrack, bool &isPlaying);
-void togglePlayPause(bool &isPlaying);
-void skipTrack(int &currentTrack, bool &isPlaying);
-void remindFinished(int currentTrack, bool &isPlaying);
+void playRandomTrack(int &currentTrack, bool &isPlaying);                       // function for playing a random first track
+void togglePlayPause(bool &isPlaying, bool &trackFinished, int currentTrack);   // function for toggling between pause and play
+void skipTrack(int &currentTrack, bool &isPlaying);                             // function for skipping to next track
+void remindFinished(int currentTrack, bool &isPlaying, bool &trackFinished);    // function for letting the serial monitor know a track is finished
