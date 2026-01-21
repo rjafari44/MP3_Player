@@ -4,7 +4,7 @@
 
 #### Circuit Schematic:
 
-![Diagram](assets/)
+![Diagram](assets/mp3_circuit.png)
 
 ## How to run
 I ran this code on a WeAct Studio esp32c3 board.
